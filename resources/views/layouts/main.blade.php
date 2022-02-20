@@ -19,7 +19,7 @@
   <script src="/js/script.js"></script>
 </head>
 <body>
-  <header>
+  <header class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="collapse navbar-collapse" id="navbar">
         <a href="/" class="navbar-brand">
@@ -28,15 +28,24 @@
         <ul class="navbar-nav">
           <li class="nav-item" role="button"><a class="nav-link" href="/">Eventos</a></li>
           <li class="nav-item" role="button"><a class="nav-link" href="/eventos/create">Criar Eventos</a></li>
-          <li class="nav-item" role="button"><a class="nav-link">Entrar</a></li>
-          <li class="nav-item" role="button"><a class="nav-link">Cadastrar</a></li>
+          <li class="nav-item" role="button"><a class="nav-link" href="/eventos/login">Entrar</a></li>
+          <li class="nav-item" role="button"><a class="nav-link" href="">Cadastrar</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  @yield('content')
+  <main>
+    <section class="content container container-fluid">
+      @if (session('message'))
+        <p class="message">
+          {{ session('message') }}
+        </p>
+      @endif
+      @yield('content')
+    </section>
+  </main>
   <footer>
-    <p>HTC Events &copy; 2022</p>
+    <p>HDC Events &copy; 2022</p>
   </footer>
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
