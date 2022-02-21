@@ -12,7 +12,7 @@
             <input type="text" class="form-control" name="title" id="title" placeholder="Nome do evento">
          </div>
          <div class="form-group">
-            <label for="image">Imagem do evento</label>
+            <label for="image">Imagem do evento: </label>
             <input type="file" class="form-control-file" name="image" id="image" placeholder="Imagem do evento">
          </div>
          <div class="form-group">
