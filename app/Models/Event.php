@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'items' => 'array'
+    ];
     
     /**
      * The table associated with the model.
@@ -26,7 +30,8 @@ class Event extends Model
         'title',
         'description',
         'city',
-        'private'
+        'private',
+        'items'
     ];
 
 }
