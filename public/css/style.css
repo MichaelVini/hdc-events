@@ -166,6 +166,7 @@ header {
 
 #image-container img {
   border-radius: 10px;
+  min-height: 412px;
 }
 
 #info-container h1 {
@@ -183,6 +184,19 @@ header {
   font-size: 20px;
   color: #0354BB;
   margin-right: 5px;
+}
+
+#info-container #event-submit {
+  margin: 20px 0;
+}
+
+#items-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#items-list li {
+  display: flex;
 }
 
 /* footer */
