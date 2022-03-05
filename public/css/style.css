@@ -84,7 +84,7 @@ header {
 
 /* Events Container */
 #events-container h2 {
-  padding: 10px;
+  padding: 8px;
 }
 
 #events-container .card {
@@ -96,7 +96,7 @@ header {
 }
 
 #events-container p {
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 #events-container .subtitle {
